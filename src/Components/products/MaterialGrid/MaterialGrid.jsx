@@ -8,6 +8,7 @@ const materialsData = [
     grade: "304, 304L, 316, 316L, 310S, 904L",
     application: "Oil & Gas, Chemical, Pharmaceutical",
     path: "/products/tubes",
+    cate
   },
   {
     name: "Stainless Steel Round Bars",
