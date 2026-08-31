@@ -1,0 +1,102 @@
+.cta {
+  padding: 100px 0;
+  background:
+    linear-gradient(
+      rgba(11,47,107,.92),
+      rgba(7,29,69,.92)
+    ),
+    url("../../../assets/images/factory.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.cta-text {
+  max-width: 800px;
+}
+
+.cta-text h2 {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 35px;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.cta-text h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 5px;
+  background: var(--secondary);
+  border-radius: 2px;
+}
+
+.cta-text p {
+  color: #d9d9d9;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-primary,
+.cta-outline {
+  padding: 18px 40px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.cta-primary {
+  background: var(--secondary);
+  color: white;
+  box-shadow: 0 10px 20px rgba(212, 166, 42, 0.2);
+}
+
+.cta-primary:hover {
+  background: #b88a1c;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(212, 166, 42, 0.4);
+}
+
+.cta-outline {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+}
+
+.cta-outline:hover {
+  background: white;
+  color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255,255,255,0.2);
+}
+
+@media (max-width: 992px) {
+  .cta-text h2 {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+}

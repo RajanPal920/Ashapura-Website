@@ -1,0 +1,155 @@
+/* ── MissionVision.css ── */
+.missionvision-section {
+  background: #F1F5F9;
+  padding: 40px 0;
+}
+
+.missionvision-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.missionvision-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.missionvision-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #D4A62A;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.missionvision-eyebrow::before,
+.missionvision-eyebrow::after {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background: #D4A62A;
+}
+
+.missionvision-heading {
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0;
+}
+
+.missionvision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.mv-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 44px 36px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.12);
+}
+
+/* Gold slide-up underline on hover */
+.mv-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #D4A62A;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.mv-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* Top accent line */
+.mv-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 3px;
+  background: #D4A62A;
+}
+
+.mv-icon {
+  font-size: 2.2rem;
+  color: #D4A62A;
+  margin-bottom: 20px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.mv-card:hover .mv-icon {
+  transform: scale(1.15) rotate(-5deg);
+}
+
+.mv-card h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.mv-card p {
+  font-size: 0.93rem;
+  color: #4B5563;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.mv-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mv-card ul li {
+  font-size: 0.88rem;
+  color: #374151;
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.55;
+}
+
+.mv-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #D4A62A;
+}
+
+@media (max-width: 768px) {
+  .missionvision-grid { grid-template-columns: 1fr; }
+}

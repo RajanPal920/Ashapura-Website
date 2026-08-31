@@ -1,0 +1,27 @@
+.materials-section {
+  padding: 120px 0;
+  background: #0B2F6B;
+  color: white;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap: 30px;
+}
+
+.material-card {
+  border: 1px solid rgba(212,166,42,.6);
+  background: transparent;
+  padding: 35px;
+  box-shadow:
+0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.material-card h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}

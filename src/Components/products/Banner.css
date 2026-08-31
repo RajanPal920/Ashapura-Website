@@ -1,0 +1,146 @@
+/* ===== PAGE BANNER ===== */
+
+.page-banner {
+  position: relative;
+  min-height: 400px;
+  
+
+  display: flex;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+/* Dark Overlay */
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 20, 60, 0.55);
+
+  z-index: 1;
+}
+
+/* Content Wrapper */
+
+.banner-wrapper {
+  position: relative;
+  z-index: 2;
+  
+}
+
+.banner-left {
+  max-width: 750px;
+
+  border-left: 5px solid #D4A62A;
+
+  padding-left: 30px;
+
+  color: white;
+}
+
+/* Tag */
+
+.banner-tag {
+  display: inline-block;
+
+  color: #D4A62A;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+/* Title */
+
+.banner-left h1 {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+
+  line-height: 1.1;
+
+  margin-bottom: 18px;
+
+  color: #D4A62A;
+}
+
+
+
+/* Decorative Gold Line */
+
+.banner-left::after {
+  content: "";
+
+  display: block;
+
+  width: 120px;
+  height: 4px;
+
+  background: #D4A62A;
+
+  margin-top: 25px;
+
+  border-radius: 50px;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+  .page-banner {
+    min-height: 350px;
+  }
+
+  .banner-left {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .page-banner {
+    min-height: 300px;
+    text-align: center;
+  }
+
+  .banner-left {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .banner-left::after {
+    margin: 20px auto 0;
+  }
+
+  .banner-tag {
+    font-size: 12px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+
+  .page-banner {
+    min-height: 260px;
+  }
+
+  .banner-left h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner-left h3 {
+    font-size: .95rem;
+  }
+}

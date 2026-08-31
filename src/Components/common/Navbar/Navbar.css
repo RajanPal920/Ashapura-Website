@@ -1,0 +1,706 @@
+/* =========================
+TOP CONTACT STRIP
+========================= */
+.top-strip {
+  position: fixed;
+  /* Sticks to the very top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  /* Fixed height */
+  z-index: 1002;
+  /* Higher than the logo bar to stay on top */
+
+  background: #071d45;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.top-strip-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.strip-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.strip-left span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.strip-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.strip-right a {
+  color: #ffffff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.strip-right a:hover {
+  color: #f0d000;
+}
+
+/* =========================
+MAIN NAVBAR
+========================= */
+.navbar-main {
+  position: fixed;
+  top: 40px;
+  /* Below top strip */
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  z-index: 1001;
+  box-shadow: 0 4px 20px rgba(212, 166, 42, 0.25);
+  border-bottom: 2px solid var(--secondary);
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 75px;
+  width: auto;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.logo-name {
+  display: block;
+  height: 60px !important;
+  max-width: 350px !important;
+  width: auto;
+  object-fit: contain;
+}
+
+.desktop-badges {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.desktop-badges img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* =========================
+NAV LINKS
+========================= */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: nowrap;
+}
+
+.nav-links a,
+.mega-trigger {
+  position: relative;
+  color: var(--primary);
+  /* Dark text for white background */
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 7px;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav-links a:hover,
+.mega-trigger:hover {
+  color: var(--secondary);
+}
+
+/* =========================
+UNDERLINE
+========================= */
+.nav-links a::after,
+.mega-trigger::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  width: 0;
+  height: 3px;
+
+  transform: translateX(-50%);
+
+  background: var(--secondary);
+
+  border-radius: 50px;
+
+  opacity: 0;
+
+  transition: all 0.35s ease;
+}
+
+.nav-links a:hover::after,
+.mega-trigger:hover::after {
+  width: 80%;
+  opacity: 1;
+}
+
+/* Active Page */
+.nav-links a.active {
+  color: var(--secondary);
+}
+
+.nav-links a.active::after {
+  width: 80%;
+  opacity: 1;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transform: translateY(-10px);
+}
+
+.iso-text {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: -2px;
+  color: black;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/* =========================
+QUOTE BUTTON
+========================= */
+.quote-btn {
+  margin-left: 20px;
+
+  border: none;
+
+  background: var(--secondary);
+
+  color: white;
+
+  padding: 10px 22px;
+
+  border-radius: 4px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.quote-btn:hover {
+  background: var(--secondary-dark);
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+MEGA MENU
+========================= */
+.dropdown-arrow {
+  margin-left: 8px;
+  font-size: 12px;
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  color: inherit;
+}
+
+.mega-dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.mega-dropdown {
+  position: static;
+}
+
+.mega-menu {
+  position: fixed;
+
+  top: 120px;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(15px);
+
+  width: 90%;
+  max-width: 1200px;
+
+  background: white;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  padding: 35px;
+
+  border-radius: 0 0 15px 15px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.3s ease;
+
+  z-index: 999;
+}
+
+.mega-dropdown:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateX(-50%) translateY(0);
+}
+
+.mega-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-column a {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 10px;
+
+  border-bottom: 1px solid #ececec;
+
+  color: #333;
+
+  transition: 0.3s ease;
+}
+
+.mega-column a:hover {
+  color: var(--secondary);
+
+  padding-left: 18px;
+}
+
+.menu-icon {
+  color: var(--secondary);
+}
+
+/* =========================
+HAMBURGER
+========================= */
+.menu-toggle {
+  display: none;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  color: var(--primary);
+}
+
+/* ============================================
+   RESPONSIVE - MEDIUM (901px - 1400px)
+   Keeps navbar single-line on smaller desktops
+   ============================================ */
+@media (min-width: 901px) and (max-width: 1400px) {
+  .top-strip {
+    font-size: 12px;
+    padding: 0 12px;
+  }
+
+  .strip-left {
+    gap: 12px;
+  }
+
+  .strip-left span {
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  .strip-right {
+    gap: 10px;
+  }
+
+  .strip-right a {
+    font-size: 14px;
+  }
+
+  .main-wrapper {
+    padding: 0 16px;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-links a,
+  .mega-trigger {
+    font-size: 13px;
+    padding: 10px 5px;
+  }
+
+  .quote-btn {
+    margin-left: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .logo-link > img {
+    height: 55px;
+  }
+
+  .logo-name {
+    height: 45px !important;
+    max-width: 200px !important;
+  }
+
+  .iso-text {
+    font-size: 8px;
+    letter-spacing: 0.7px;
+  }
+
+  /* Hide ISO/MSME badges to free horizontal space */
+  .desktop-badges {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   RESPONSIVE - TABLETS (769px - 900px)
+   (Now handled by hamburger menu — kept for
+   any tablet-specific overrides if needed)
+   ============================================ */
+@media (min-width: 769px) and (max-width: 900px) {
+  .top-wrapper {
+    gap: 10px !important;
+  }
+
+  .logo {
+    gap: 8px !important;
+  }
+
+  .logo img:last-child {
+    max-width: 200px !important;
+    height: 45px !important;
+  }
+
+  .certifications-logo {
+    gap: 6px !important;
+  }
+
+  .certifications-logo img {
+    height: 45px !important;
+    width: auto !important;
+  }
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE (Below 900px)
+   Hamburger menu kicks in at 900px
+   ============================================ */
+@media (max-width: 900px) {
+  /* --- 1. FIX BLUE STRIP (Fit on one line) --- */
+  .top-strip {
+    height: 40px !important;
+    padding: 0 10px !important;
+  }
+
+  .top-strip-wrapper {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    gap: 4px !important;
+  }
+
+  .strip-left {
+    gap: 8px !important;
+  }
+
+  .strip-right {
+    gap: 8px !important;
+  }
+
+  .strip-left span {
+    font-size: 10px !important;
+    gap: 4px !important;
+  }
+
+  .strip-right a {
+    font-size: 12px !important;
+  }
+
+  /* --- 2. FIX WHITE LOGO BAR --- */
+  .logo {
+    gap: 6px !important;
+  }
+
+  .logo-link > img {
+    height: 58px !important;
+    width: auto !important;
+  }
+
+  .logo-name {
+    height: 42px !important;
+    max-width: 240px !important;
+    width: auto !important;
+  }
+
+  .iso-text {
+    font-size: 8px !important;
+    letter-spacing: 0.7px !important;
+    margin-top: 2px !important;
+  }
+
+  .desktop-badges {
+    display: none !important;
+  }
+
+  .certifications-logo {
+    gap: 4px !important;
+  }
+
+  .certifications-logo img {
+    height: 32px !important;
+    width: auto !important;
+  }
+
+  /* --- 3. FIX MAIN NAVBAR --- */
+  .navbar-main {
+    top: 40px !important;
+    /* adjust to top-strip height */
+    height: 80px !important;
+  }
+
+  .main-wrapper {
+    justify-content: space-between !important;
+    padding: 0 15px !important;
+  }
+
+  .menu-toggle {
+    display: block !important;
+  }
+
+  .quote-btn {
+    display: none !important;
+  }
+
+  /* --- 4. FIX MOBILE DROPDOWN MENU --- */
+  .nav-links {
+    position: absolute !important;
+    top: 80px !important;
+    /* Starts exactly at bottom of navbar-main */
+    left: 0 !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    padding: 20px 0 !important;
+
+    background: #ffffff !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+
+    /* Smooth slide-down transition */
+    max-height: 0 !important;
+    overflow-y: hidden !important;
+    transition:
+      max-height 0.4s ease,
+      opacity 0.4s ease,
+      transform 0.4s ease !important;
+
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transform: translateY(-15px) !important;
+  }
+
+  .nav-links.active {
+    max-height: calc(100vh - 50px) !important;
+    overflow-y: auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior: contain !important;
+
+    scrollbar-width: thin !important;
+    scrollbar-color: var(--secondary) rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    width: 6px !important;
+  }
+
+  .nav-links::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .nav-links::-webkit-scrollbar-thumb {
+    background: var(--secondary) !important;
+    border-radius: 10px !important;
+  }
+
+  .nav-links a,
+  .nav-links .mega-trigger {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 14px 20px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+    color: var(--primary) !important;
+    font-size: 15px !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .nav-links a:hover,
+  .nav-links .mega-trigger:hover {
+    background: rgba(212, 166, 42, 0.12) !important;
+    color: var(--secondary) !important;
+    padding-left: 30px !important;
+  }
+
+  /* Remove glowing underline on mobile */
+  .nav-links a::after,
+  .mega-trigger::after {
+    display: none !important;
+  }
+
+  /* --- 5. FIX THE BROKEN MOBILE MEGA MENU --- */
+
+  .mega-menu {
+    /* Hidden state on mobile */
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 0.4s ease !important;
+
+    /* Make it a clean single column */
+    position: static !important;
+    width: 100% !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: #f8f9fb !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    border-radius: 0 !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+  }
+
+  /* Open state - smoothly expands the menu */
+  .mega-menu.open {
+    max-height: 2000px !important;
+    /* Large enough to fit all content */
+  }
+
+  .mega-column {
+    padding: 0 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .mega-column:last-child {
+    border-bottom: none !important;
+  }
+
+  .mega-column a {
+    padding: 14px 25px !important;
+    border-bottom: none !important;
+    gap: 15px !important;
+    color: var(--primary) !important;
+    background: transparent !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    text-align: left !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .mega-column a:hover {
+    background: rgba(212, 166, 42, 0.12) !important;
+    color: var(--secondary) !important;
+    padding-left: 35px !important;
+  }
+
+  .menu-icon {
+    font-size: 18px !important;
+    color: var(--secondary) !important;
+    width: 24px !important;
+    text-align: center !important;
+  }
+}
+
+/* ============================================
+   RESPONSIVE - SMALL MOBILES (Below 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  .main-wrapper {
+    padding: 0 11px !important;
+  }
+
+  .logo-link {
+    gap: 7px !important;
+  }
+
+  .logo-link > img {
+    height: 52px !important;
+    width: auto !important;
+  }
+
+  .logo-name {
+    height: 35px !important;
+    max-width: 200px !important;
+    width: auto !important;
+  }
+
+  .iso-text {
+    font-size: 8px !important;
+    letter-spacing: 0.5px !important;
+    white-space: nowrap;
+  }
+
+  .menu-toggle {
+    font-size: 25px !important;
+  }
+}

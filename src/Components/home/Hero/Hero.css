@@ -1,0 +1,317 @@
+/* Force-remove any dark overlay or tint */
+.hero::before,
+.hero-slide::before {
+  display: none !important;
+  background: transparent !important;
+  opacity: 0 !important;
+}
+
+
+
+.hero {
+  position: relative;
+  height: 83vh;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,.7) 0%, rgba(0,0,0,.2) 60%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0; /* Hidden by default */
+}
+
+.hero-slide.prev {
+  z-index: 1;
+  opacity: 1;
+}
+
+.hero-slide.active {
+  z-index: 2;
+  opacity: 1;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05);
+  transition: transform 7s ease;
+}
+
+.hero-slide.active .hero-bg {
+  transform: scale(1);
+}
+
+.hero-container {
+  max-width: 1500px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  max-width: 680px;   /* Increased to give longer text more room */
+  flex-shrink: 0;
+}
+
+.hero-text-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #D4A62A;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.hero-tag::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #D4A62A;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #D4A62A, 0 0 20px #D4A62A;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 4vw, 4.2rem); /* Reduced to prevent text breaking with longer titles */
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  max-width: 650px;
+  margin-bottom: 35px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  background: #D4A62A;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 166, 42, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 12px rgba(212, 166, 42, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 166, 42, 0);
+  }
+}
+
+.btn-primary:hover {
+  background: #fff;
+  color: #0B2F6B;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.btn-outline:hover {
+  background: #D4A62A;
+  border-color: #D4A62A;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-dots {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.hero-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-dots button:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-dots .active-dot {
+  width: 24px;
+  border-radius: 4px;
+  background: #D4A62A;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(212, 166, 42, 0.8);
+}
+
+/* =========================
+   ANIMATED PRODUCTS (OCTAGON)
+   ========================= */
+.hero-products-overlay {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;  /* Start right after text card */
+  height: 100%;
+  flex: 1;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-bottom: 80px;
+}
+
+.hero-product-octagon {
+  width: 95px;
+  height: 95px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+  opacity: 0;
+  transform: translateY(35px) scale(0.85);
+  animation: slideUpFade 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.octagon-inner {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  transition: transform 0.4s ease;
+}
+
+.hero-product-octagon:hover .octagon-inner {
+  transform: scale(1.12);
+}
+
+@keyframes slideUpFade {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* =========================
+   RESPONSIVE LAYOUT
+   ========================= */
+@media (max-width: 1200px) {
+  .hero-product-octagon {
+    width: 80px;
+    height: 80px;
+  }
+  .hero-products-overlay {
+    gap: 8px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-product-octagon {
+    width: 65px;
+    height: 65px;
+    padding: 3px;
+  }
+  .hero-products-overlay {
+    gap: 6px;
+    padding-left: 15px;
+  }
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+  }
+  .hero-content {
+    justify-content: flex-start;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .hero-products-overlay {
+    flex-wrap: nowrap;        /* Single row on mobile too */
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    gap: 8px;
+    flex: none;
+    height: auto;
+    overflow: hidden;
+  }
+  /* Show only first 4 on mobile */
+  .hero-product-octagon:nth-child(n+5) {
+    display: none;
+  }
+  .hero-product-octagon {
+    width: 65px;
+    height: 65px;
+    padding: 3px;
+  }
+}

@@ -1,0 +1,13 @@
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.spec-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+.spec-table tr:nth-child(even) {
+  background: #f7f7f7;
+}

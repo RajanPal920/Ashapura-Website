@@ -1,0 +1,145 @@
+.clients-section {
+  padding: 20px 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #ffffff,
+      #f8f9fb,
+      #ffffff
+    );
+
+  position: relative;
+  overflow: hidden;
+}
+
+.clients-section::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(11,47,107,.05),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(212,166,42,.08),
+      transparent 35%
+    );
+
+  pointer-events: none;
+}
+
+.clients-heading {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 60px;
+}
+
+.clients-heading span {
+  display: none;
+}
+
+.clients-heading h2 {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 25px;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--primary);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.clients-heading h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--secondary);
+  border-radius: 2px;
+}
+
+.clients-heading p {
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.clients-slider {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+  /* Cinematic edge-fading */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  padding: 10px 0; /* padding for shadow breathing room */
+}
+
+.clients-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+
+  animation: scrollClients 25s linear infinite;
+}
+
+.clients-track:hover {
+  animation-play-state: paused;
+}
+
+.client-logo {
+  min-width: 220px;
+  height: 120px;
+
+  background: rgba(255,255,255,.95);
+
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  border: 1px solid rgba(11,47,107,.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+  transition: .3s;
+}
+
+.client-logo:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.08);
+}
+
+.client-logo img {
+  max-width: 140px;
+  max-height: 70px;
+  object-fit: contain;
+
+  opacity: 1;
+  transition: .3s;
+}
+
+.client-logo:hover img {
+  transform: scale(1.08);
+}
+
+@keyframes scrollClients {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+

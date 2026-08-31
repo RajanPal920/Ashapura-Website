@@ -1,0 +1,163 @@
+.hero-ticker {
+  background: var(--primary-dark);
+  /* Match upper navbar */
+
+  overflow: hidden;
+  padding: 12px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  position: relative;
+}
+
+.hero-ticker::before,
+.hero-ticker::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-ticker::before {
+  left: 0;
+
+  background: linear-gradient(to right,
+      var(--primary-dark),
+      transparent);
+}
+
+.hero-ticker::after {
+  right: 0;
+
+  background: linear-gradient(to left,
+      var(--primary-dark),
+      transparent);
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Halved to account for dividers */
+
+  width: max-content;
+
+  animation: tickerScroll 55s linear infinite;
+}
+
+.hero-ticker:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  white-space: nowrap;
+
+  color: #d4a62a;
+  /* Gold text */
+
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.ticker-item:hover {
+  transform: scale(1.08);
+  color: #FFFFFF;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.ticker-icon {
+  font-size: 1rem;
+  color: #D4A62A;
+  filter: drop-shadow(0 0 5px rgba(212, 166, 42, 0.6));
+  transition: all 0.3s ease;
+}
+
+.ticker-item:hover .ticker-icon {
+  color: #FFFFFF;
+  transform: rotate(15deg);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+}
+
+.ticker-divider {
+  width: 2px;
+  height: 28px;
+  background: linear-gradient(to bottom, transparent 0%, #D4A62A 50%, transparent 100%);
+  opacity: 0.6;
+}
+
+@keyframes tickerScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width:768px) {
+  .hero-ticker {
+    padding: 10px 0;
+  }
+  
+  .hero-ticker::before,
+  .hero-ticker::after {
+    width: 80px;
+  }
+
+  .ticker-track {
+    gap: 20px;
+  }
+
+  .ticker-item {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+  
+  .ticker-icon {
+    font-size: 0.9rem;
+  }
+
+  .ticker-divider {
+    height: 24px;
+  }
+}
+
+@media (max-width:480px) {
+  .hero-ticker {
+    padding: 8px 0;
+  }
+  
+  .hero-ticker::before,
+  .hero-ticker::after {
+    width: 40px;
+  }
+
+  .ticker-track {
+    gap: 15px;
+  }
+
+  .ticker-item {
+    font-size: 0.85rem;
+    gap: 8px;
+  }
+  
+  .ticker-icon {
+    font-size: 0.8rem;
+  }
+
+  .ticker-divider {
+    height: 20px;
+  }
+}

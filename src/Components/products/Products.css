@@ -1,0 +1,147 @@
+/* =========================
+   COILS SECTION
+========================= */
+
+.products-section {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.products-section .container {
+  max-width: 1140px !important; 
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+  box-sizing: border-box !important;
+}
+
+/* =========================
+   PRODUCTS GRID (Exactly 3 per row)
+========================= */
+
+.products-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 30px !important;
+  width: 100% !important;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  border-top: 5px solid var(--secondary);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 260px; /* Slightly reduced to let text breathe */
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.08);
+}
+
+.product-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.25), transparent);
+  pointer-events: none;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.product-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-content h4 {
+  color: var(--primary);
+  font-size: 1.15rem; /* Smaller text fits better in 3 columns */
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  min-height: 60px; /* Ensures buttons align even if text lengths differ */
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.product-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  background: var(--primary);
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.product-btn:hover {
+  background: var(--secondary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE (2 columns for tablets, 1 for mobile)
+========================= */
+
+@media (max-width: 1100px) { /* Trigger 2 columns sooner */
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-section {
+    padding: 50px 0;
+  }
+  .products-grid {
+    grid-template-columns: 1fr !important;
+    gap: 25px !important;
+  }
+  .product-image img {
+    height: 230px;
+  }
+  .product-content h4 {
+    font-size: 1.05rem;
+  }
+}
