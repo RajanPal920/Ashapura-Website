@@ -104,11 +104,11 @@ function FeaturedProducts() {
             </div>
           ))}
         </div>
-        <div className="view-all-wrapper">
+        {/* <div className="view-all-wrapper">
           <Link to="/products/pipes" className="view-all-btn">
             View All Products
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
