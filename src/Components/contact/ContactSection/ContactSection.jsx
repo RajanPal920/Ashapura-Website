@@ -101,7 +101,7 @@ function ContactSection() {
             <div>
               <h4>
                 <FaMapMarkerAlt style={{ marginRight: "10px" }} />
-                Registered Office
+                Registered & Head Office
               </h4>
               <p>
                 Building No. 58, 1st Floor, Shop No. 1,
