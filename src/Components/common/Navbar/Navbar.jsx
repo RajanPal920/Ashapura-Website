@@ -76,7 +76,13 @@ function Navbar() {
               <FaPhone /> +91-7666989991
             </span>
             <span>
+              <FaPhone /> +91-9869189991
+            </span>
+            <span>
               <FaEnvelope /> shreeashapura1@gmail.com
+            </span>
+            <span>
+              <FaEnvelope /> Sales@shreeashapurametal.com
             </span>
           </div>
           <div className="strip-right">
