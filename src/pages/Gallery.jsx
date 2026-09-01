@@ -53,6 +53,14 @@ import buttweldfitting1 from "../products-image/ss-carbon-alloy-buttweld.webp";
 import buttweldfitting2 from "../products-image/ss-carbon-alloy-buttweld.webp";
 import buttweldfitting3 from "../products-image/ss-hastelloy-buttweld.webp";
 import buttweldfitting4 from "../products-image/ss-incoloy-buttweld.webp";
+import buttweldfitting5 from "../products-image/ss-inconel-buttweld.png";
+import buttweldfitting6 from "../products-image/ss-alloy.png";
+import buttweldfitting7 from "../products-image/ss-carbon.png";
+import buttweldfitting8 from "../products-image/ss-carbon2.png";
+import buttweldfitting9 from "../products-image/ss-copper.png";
+import buttweldfitting10 from "../products-image/ss-mix-butt.png";
+import buttweldfitting11 from "../products-image/ss-monel.png";
+import buttweldfitting12 from "../products-image/ss-nickel.png";
 
 import flange1 from "../products-image/ss-carbon-alloy-flanges.webp";
 import flange2 from "../products-image/ss-duplex-flanges.webp";
@@ -282,6 +290,55 @@ const galleryData = [
 
     category: "buttweld-fittings", 
   },
+  {
+    id:64,
+    src: buttweldfitting5,
+
+    category: "buttweld-fittings",
+  },
+  {
+    id:65,
+    src: buttweldfitting6,
+
+    category: "buttweld-fittings",
+  },
+  {
+    id:66,
+    src: buttweldfitting7,
+
+    category: "buttweld-fittings",
+  },
+  {
+    id:67,
+    src: buttweldfitting8,
+
+    category: "buttweld-fittings",
+  },
+  {
+    id:68,
+    src: buttweldfitting9,
+
+    category: "buttweld-fittings",
+  },
+  {
+    id:69,
+    src: buttweldfitting10,
+
+    category: "buttweld-fittings",
+  },
+  {
+    id:70,
+    src: buttweldfitting11,
+
+    category: "buttweld-fittings",
+  },
+  {
+    id:71,
+    src: buttweldfitting12,
+
+    category: "buttweld-fittings",
+  },
+
   {
     id: 37,
     src: flange1,
