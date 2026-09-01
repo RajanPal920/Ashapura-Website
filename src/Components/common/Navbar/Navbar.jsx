@@ -73,10 +73,7 @@ function Navbar() {
         <div className="top-strip-wrapper">
           <div className="strip-left">
             <span>
-              <FaPhone /> +91-7666989991
-            </span>
-            <span>
-              <FaPhone /> +91-9869189991
+              <FaPhone /> +91 93268 83622
             </span>
             <span>
               <FaEnvelope /> shreeashapura1@gmail.com
