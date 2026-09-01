@@ -118,13 +118,13 @@ function ContactSection() {
               </h4>
               <p>
                 <strong>Landline:</strong>{" "}
-                <a href="tel:+912267438386">+91 22 6743 8386</a> /{" "}
-                <a href="tel:+912266362062">+91 22 6636 2062</a>
+                <a href="tel:+912267438386">+91 22 6743 8386</a> <br />
+                <a href="tel:+912266362062 " >  +91 22 6636 2062</a>
               </p>
               <p>
                 <strong>Mr. B. H. Jain:</strong>{" "}
-                <a href="tel:+917666989991">+91 76669 89991</a> /{" "}
-                <a href="tel:+919223289991">+91 92232 89991</a>
+                <a href="tel:+917666989991">+91 76669 89991</a> 
+                
               </p>
               <p>
                 <strong>Mr. Shyam Singh Rajput:</strong>{" "}
@@ -187,7 +187,7 @@ function ContactSection() {
               </p>
               <p>
                 <strong>Phone:</strong>{" "}
-                <a href="tel:+919869189991">+91 98691 89991</a>
+              <a href="tel:+919223289991">+91 92232 89991</a>
               </p>
             </div>
           </div>
