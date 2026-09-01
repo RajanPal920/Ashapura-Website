@@ -43,6 +43,23 @@
   margin-bottom: 20px;
 }
 
+/* --- Single line for phone numbers --- */
+.phone-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 5px;
+  margin-bottom: 5px;
+}
+
+.phone-line strong {
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.phone-separator {
+  color: #999;
+}
 .contact-form-card button {
   background: var(--secondary);
   color: white;
@@ -52,6 +69,44 @@
   font-weight: 600;
 }
 
+/* --- Phone rows with perfect alignment --- */
+.phone-row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 6px;
+  padding: 4px 0;
+}
+
+.phone-label {
+  min-width: 145px;
+  font-weight: 600;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.phone-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.phone-numbers a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.phone-numbers a:hover {
+  color: var(--secondary);
+}
+
+.separator {
+  color: #999;
+  margin: 0 2px;
+  font-weight: 300;
+}
 .contact-cards {
   display: flex;
   flex-direction: column;
@@ -66,7 +121,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* --- NEW: Consistent heading & icon styling --- */
+/* --- Consistent heading & icon styling --- */
 .contact-heading {
   color: var(--primary);
   font-size: 18px;
@@ -114,6 +169,25 @@
   color: var(--secondary);
 }
 
+/* --- NEW: Single line for phone numbers --- */
+.phone-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 10px;
+  margin-bottom: 5px;
+}
+
+.phone-line strong {
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.phone-line .phone-separator {
+  color: #999;
+  margin: 0 2px;
+}
+
 /* --- Responsive --- */
 @media (max-width: 992px) {
   .contact-layout {
@@ -149,6 +223,10 @@
     padding: 20px;
     flex-direction: column;
   }
+
+  .phone-line {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 480px) {
@@ -166,5 +244,9 @@
 
   .contact-heading .contact-icon {
     font-size: 18px;
+  }
+
+  .phone-line strong {
+    min-width: 70px;
   }
 }

@@ -116,20 +116,29 @@ function ContactSection() {
                 <FaPhoneAlt className="contact-icon" />
                 Call Us
               </h4>
-              <p>
-                <strong>Landline:</strong>{" "}
-                <a href="tel:+912267438386">+91 22 6743 8386</a> <br />
-                <a href="tel:+912266362062 " >  +91 22 6636 2062</a>
-              </p>
-              <p>
-                <strong>Mr. B. H. Jain:</strong>{" "}
-                <a href="tel:+917666989991">+91 76669 89991</a> 
-                
-              </p>
-              <p>
-                <strong>Mr. Shyam Singh Rajput:</strong>{" "}
-                <a href="tel:+919326883622">+91 93268 83622</a>
-              </p>
+
+              <div className="phone-row">
+                <span className="phone-label">Landline:</span>
+                <span className="phone-numbers">
+                  <a href="tel:+912267438386">+91 22 6743 8386</a>
+                  <span className="separator"> / </span>
+                  <a href="tel:+912266362062">+91 22 6636 2062</a>
+                </span>
+              </div>
+
+              <div className="phone-row">
+                <span className="phone-label">Mr. B. H. Jain:</span>
+                <span className="phone-numbers">
+                  <a href="tel:+917666989991">+91 76669 89991</a>
+                </span>
+              </div>
+
+              <div className="phone-row">
+                <span className="phone-label">Mr. Shyam Singh Rajput:</span>
+                <span className="phone-numbers">
+                  <a href="tel:+919326883622">+91 93268 83622</a>
+                </span>
+              </div>
 
               <h4 className="contact-heading" style={{ marginTop: "20px" }}>
                 <FaEnvelope className="contact-icon" />
@@ -187,7 +196,7 @@ function ContactSection() {
               </p>
               <p>
                 <strong>Phone:</strong>{" "}
-              <a href="tel:+919223289991">+91 92232 89991</a>
+                <a href="tel:+919223289991">+91 92232 89991</a>
               </p>
             </div>
           </div>
