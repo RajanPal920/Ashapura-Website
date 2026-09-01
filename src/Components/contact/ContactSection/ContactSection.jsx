@@ -96,11 +96,11 @@ function ContactSection() {
         </div>
 
         <div className="contact-cards">
-          {/* Single Container - All Information */}
+          {/* First Container - Registered Office + Email + Website + Call Us */}
           <div className="info-card">
             <div>
-              <h4>
-                <FaMapMarkerAlt style={{ marginRight: "10px" }} />
+              <h4 className="contact-heading">
+                <FaMapMarkerAlt className="contact-icon" />
                 Registered & Head Office
               </h4>
               <p>
@@ -110,8 +110,29 @@ function ContactSection() {
                 <br />
                 Maharashtra, India.
               </p>
-              <h4 style={{ marginTop: "20px" }}>
-                <FaEnvelope style={{ marginRight: "10px" }} />
+
+              {/* Call Us Section */}
+              <h4 className="contact-heading" style={{ marginTop: "20px" }}>
+                <FaPhoneAlt className="contact-icon" />
+                Call Us
+              </h4>
+              <p>
+                <strong>Landline:</strong>{" "}
+                <a href="tel:+912267438386">+91 22 6743 8386</a> /{" "}
+                <a href="tel:+912266362062">+91 22 6636 2062</a>
+              </p>
+              <p>
+                <strong>Mr. B. H. Jain:</strong>{" "}
+                <a href="tel:+917666989991">+91 76669 89991</a> /{" "}
+                <a href="tel:+919223289991">+91 92232 89991</a>
+              </p>
+              <p>
+                <strong>Mr. Shyam Singh Rajput:</strong>{" "}
+                <a href="tel:+919326883622">+91 93268 83622</a>
+              </p>
+
+              <h4 className="contact-heading" style={{ marginTop: "20px" }}>
+                <FaEnvelope className="contact-icon" />
                 Email Us
               </h4>
               <p>
@@ -125,8 +146,8 @@ function ContactSection() {
                 </a>
               </p>
 
-              <h4 style={{ marginTop: "20px" }}>
-                <FaGlobe style={{ marginRight: "10px" }} />
+              <h4 className="contact-heading" style={{ marginTop: "20px" }}>
+                <FaGlobe className="contact-icon" />
                 Website
               </h4>
               <p>
@@ -152,9 +173,11 @@ function ContactSection() {
 
           {/* Second Container - Branch Office */}
           <div className="info-card">
-            <FaMapMarkerAlt />
             <div>
-              <h4>Branch Office</h4>
+              <h4 className="contact-heading">
+                <FaMapMarkerAlt className="contact-icon" />
+                Branch Office
+              </h4>
               <p>
                 Shree Ashapura Metal and Alloys Pvt Ltd, Building no. 60/62,
                 <br />
@@ -171,9 +194,11 @@ function ContactSection() {
 
           {/* Third Container - Factory Address */}
           <div className="info-card">
-            <FaMapMarkerAlt />
             <div>
-              <h4>Factory Address</h4>
+              <h4 className="contact-heading">
+                <FaMapMarkerAlt className="contact-icon" />
+                Factory Address
+              </h4>
               <p>
                 Shree Ashapura Metal and Alloys Pvt Ltd, Gala no. X/5, Kasturi
                 Industrial Estate,
