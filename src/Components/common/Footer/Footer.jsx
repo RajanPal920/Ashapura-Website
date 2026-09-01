@@ -1,3 +1,5 @@
+import "./Footer.css";
+
 import {
   FaFacebookF,
   FaInstagram,
@@ -9,7 +11,6 @@ import {
 } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
-import "./Footer.css";
 
 import logo from "../../../assets/images/logo.webp";
 
@@ -131,11 +132,28 @@ function Footer() {
           <div className="contact-row">
             <FaPhoneAlt className="contact-icon" />
             <div>
-              <a href="tel:+912267438386">+91 22 6743 8386 (Landline)</a>
-              <a href="tel:+917666989991">+91 76669 89991 (Mr. B.H. Jain)</a>
-              <a href="tel:+919326883622">
-                +91 93268 83622 (Mr. Shyam Singh Rajput)
-              </a>
+              <div className="phone-row-footer">
+                <span className="phone-label-footer">Landline:</span>
+                <span className="phone-numbers-footer">
+                  <a href="tel:+912267438386">+91 22 6743 8386</a>
+                  <span className="separator-footer"> / </span>
+                  <a href="tel:+912266362062">+91 22 6636 2062</a>
+                </span>
+              </div>
+              <div className="phone-row-footer">
+                <span className="phone-label-footer">Mr. B. H. Jain:</span>
+                <span className="phone-numbers-footer">
+                  <a href="tel:+917666989991">+91 76669 89991</a>
+                </span>
+              </div>
+              <div className="phone-row-footer">
+                <span className="phone-label-footer">
+                  Mr. Shyam Singh Rajput:
+                </span>
+                <span className="phone-numbers-footer">
+                  <a href="tel:+919326883622">+91 93268 83622</a>
+                </span>
+              </div>
             </div>
           </div>
 
