@@ -134,7 +134,7 @@ function ContactSection() {
               </div>
 
               <div className="phone-row">
-                <span className="phone-label">Mr. Shyam Singh Rajput:</span>
+                <span className="phone-label">Mr. ShyamSingh Rajput:</span>
                 <span className="phone-numbers">
                   <a href="tel:+919326883622">+91 93268 83622</a>
                 </span>

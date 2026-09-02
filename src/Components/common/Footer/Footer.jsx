@@ -148,7 +148,7 @@ function Footer() {
               </div>
               <div className="phone-row-footer">
                 <span className="phone-label-footer">
-                  Mr. Shyam Singh Rajput:
+                  Mr. ShyamSingh Rajput:
                 </span>
                 <span className="phone-numbers-footer">
                   <a href="tel:+919326883622">+91 93268 83622</a>

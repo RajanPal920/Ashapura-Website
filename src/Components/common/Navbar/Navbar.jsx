@@ -76,6 +76,9 @@ function Navbar() {
               <FaPhone /> +91 93268 83622
             </span>
             <span>
+              <FaPhone /> +91 7666989991
+            </span>
+            <span>
               <FaEnvelope /> shreeashapura1@gmail.com
             </span>
             <span>
