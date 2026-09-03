@@ -118,23 +118,23 @@ function ContactSection() {
               </h4>
 
               <div className="phone-row">
-                <span className="phone-label">Landline:</span>
+                <span className="phone-label">Landline</span>
                 <span className="phone-numbers">
                   <a href="tel:+912267438386">+91 22 6743 8386</a>
-                  <span className="separator"> / </span>
+                  <span className="separator">  </span>
                   <a href="tel:+912266362062">+91 22 6636 2062</a>
                 </span>
               </div>
 
               <div className="phone-row">
-                <span className="phone-label">Mr. B. H. Jain:</span>
+                <span className="phone-label">Mr. B. H. Jain</span>
                 <span className="phone-numbers">
                   <a href="tel:+917666989991">+91 76669 89991</a>
                 </span>
               </div>
 
               <div className="phone-row">
-                <span className="phone-label">Mr. ShyamSingh Rajput:</span>
+                <span className="phone-label">Mr. ShyamSingh Rajput</span>
                 <span className="phone-numbers">
                   <a href="tel:+919326883622">+91 93268 83622</a>
                 </span>
