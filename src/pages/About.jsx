@@ -53,15 +53,30 @@ export const milestones = [
 export const whatWeDo = [
   {
     heading: "Core Roles",
-    items: ["Manufacturer & Stockist", "Importer & Exporter", "Project Supplier", "Third-Party Inspection Support"],
+    items: [
+      "Manufacturer & Stockist",
+      "Importer & Exporter",
+      "Project Supplier",
+      "Third-Party Inspection Support",
+    ],
   },
   {
     heading: "Product Portfolio",
-    items: ["Pipes & Tubes (Seamless/ERW)", "Buttweld & Forged Fittings", "Industrial Flanges", "Sheets, Plates & Coils"],
+    items: [
+      "Pipes & Tubes (Seamless/ERW)",
+      "Buttweld & Forged Fittings",
+      "Industrial Flanges",
+      "Sheets, Plates & Coils",
+    ],
   },
   {
     heading: "Materials",
-    items: ["Stainless Steel", "Duplex & Super Duplex", "Inconel, Hastelloy, Monel", "Titanium & Copper Nickel"],
+    items: [
+      "Stainless Steel",
+      "Duplex & Super Duplex",
+      "Inconel, Hastelloy, Monel",
+      "Titanium & Copper Nickel",
+    ],
   },
 ];
 
@@ -106,7 +121,7 @@ export function CountUp({ target, suffix }) {
         };
         requestAnimationFrame(step);
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     observer.observe(el);
@@ -135,7 +150,7 @@ function About() {
         subtitle="Engineering Excellence Since 2013"
         image={banner}
         tag="ABOUT US"
-        description="Ashapura Metal Supplier is a premier manufacturer and stockist of premium stainless steel, alloy steel, and non-ferrous products."
+        description="Shree Ashapura Metal & Alloys Pvt. Ltd. is a premier manufacturer, supplier, and exporter of premium stainless steel, alloy steel, duplex steel, nickel alloys, and industrial piping solutions."
       >
         <div className="feature-box">
           <FaBuilding />
