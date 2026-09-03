@@ -12,17 +12,17 @@ function Stats() {
   const stats = [
     {
   icon: <FaAward />,
-  value: "13+",
+  value: "25+",
   label: "Years Experience"
 },
 {
   icon: <FaUsers />,
-  value: "1000+",
+  value: "500+",
   label: "Satisfied Clients"
 },
 {
   icon: <FaGlobe />,
-  value: "70+",
+  value: "50+",
   label: "Countries Served"
 },
 {

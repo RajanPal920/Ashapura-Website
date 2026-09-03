@@ -12,7 +12,6 @@ import Stats from "../Components/home/Stats/Stats";
 import Industries from "../Components/home/Industries/Industries";
 import Clients from "../Components/home/Clients/Clients";
 import MaterialGrades from "../Components/home/MaterialGrades/MaterialGrades";
-import CertificationsPreview from "../Components/home/CertificationsPreview/CertificationsPreview";
 import WhyChooseUs from "../Components/about/WhyChooseUs/WhyChooseUs";
 
 import { approach } from "../pages/About";
@@ -49,7 +48,6 @@ function Home() {
       <MaterialGrades />
       <Clients />
       <WhyChooseUs approach={approach} />
-      <CertificationsPreview />
       <CTA />
       <Footer />
     </>

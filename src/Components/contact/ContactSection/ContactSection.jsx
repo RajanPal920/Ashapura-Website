@@ -188,9 +188,9 @@ function ContactSection() {
                 Branch Office
               </h4>
               <p>
-                Shree Ashapura Metal and Alloys Pvt Ltd, Building no. 60/62,
+                Shree Ashapura Metal & Alloys Pvt Ltd, Building No. 60/62,
                 <br />
-                Shop no. 1, Khandke Building, 1st Kumbharwada Lane,
+                Shop No. 1, Khandke Building, 1st Kumbharwada Lane,
                 <br />
                 Mumbai 400004
               </p>
@@ -209,10 +209,10 @@ function ContactSection() {
                 Factory Address
               </h4>
               <p>
-                Shree Ashapura Metal and Alloys Pvt Ltd, Gala no. X/5, Kasturi
+                Shree Ashapura Metal & Alloys Pvt Ltd, Gala No. X/5, Kasturi
                 Industrial Estate,
                 <br />
-                Fatak Road, Bhayandar East, 101105
+                Fatak Road, Bhayandar East, 401105
               </p>
               <p>
                 <strong>Phone:</strong>{" "}

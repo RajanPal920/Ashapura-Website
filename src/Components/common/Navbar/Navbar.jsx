@@ -82,7 +82,7 @@ function Navbar() {
               <FaEnvelope /> shreeashapura1@gmail.com
             </span>
             <span>
-              <FaEnvelope /> Sales@shreeashapurametal.com
+              <FaEnvelope /> sales@shreeashapurametal.com
             </span>
           </div>
           <div className="strip-right">
@@ -591,9 +591,6 @@ function Navbar() {
 
             <NavLink to="/gallery" onClick={() => setMenuOpen(false)}>
               Gallery
-            </NavLink>
-            <NavLink to="/certifications" onClick={() => setMenuOpen(false)}>
-              Certifications
             </NavLink>
             <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
               Contact

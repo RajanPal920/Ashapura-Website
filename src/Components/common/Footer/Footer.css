@@ -32,6 +32,7 @@
   line-height: 1.9;
   margin-bottom: 25px;
   color: rgba(255, 255, 255, 0.75);
+  text-transform: capitalize;
 }
 
 .footer h4 {
@@ -39,6 +40,7 @@
   font-size: 20px;
   margin-bottom: 25px;
   position: relative;
+  text-transform: capitalize;
 }
 
 .footer h4::after {
@@ -64,6 +66,7 @@
   letter-spacing: 0.5px;
   padding-left: 0;
   display: inline-block;
+  text-transform: capitalize;
 }
 
 .footer ul a::before {
@@ -105,6 +108,7 @@
   font-size: 12px;
   color: white;
   transition: all 0.3s ease;
+  text-transform: uppercase;
 }
 
 .footer-badges span:hover {
@@ -135,6 +139,7 @@
   transform: translateY(-3px);
 }
 
+/* Contact Row - Main container */
 .contact-row {
   display: flex;
   align-items: flex-start;
@@ -148,40 +153,54 @@
   margin-top: 4px;
   flex-shrink: 0;
   text-shadow: 0 0 10px rgba(212, 166, 42, 0.4);
+  min-width: 20px;
 }
 
 .contact-row div {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  flex: 1;
 }
 
 .contact-row a,
 .contact-row p {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.7;
+  margin: 0;
+}
+
+.contact-row a {
+  text-transform: lowercase;
 }
 
 .contact-row a:hover {
   color: var(--secondary);
 }
 
+.contact-row p strong {
+  text-transform: capitalize;
+}
+
 /* --- Phone rows with perfect alignment for Footer --- */
 .phone-row-footer {
   display: flex;
   align-items: baseline;
-  margin-bottom: 4px;
-  padding: 2px 0;
-  min-height: 28px;
+  margin-bottom: 8px;
+  padding: 4px 0;
+  min-height: 32px;
+  width: 100%;
 }
 
 .phone-label-footer {
-  min-width: 145px;
+  min-width: 200px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
   flex-shrink: 0;
   display: inline-block;
   font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
 }
 
 .phone-numbers-footer {
@@ -200,6 +219,8 @@
   display: inline-block;
   padding: 2px 0;
   font-size: 14px;
+  white-space: nowrap;
+  text-transform: none !important;
 }
 
 .phone-numbers-footer a:hover {
@@ -208,7 +229,7 @@
 
 .separator-footer {
   color: rgba(255, 255, 255, 0.4);
-  margin: 0 4px;
+  margin: 0 6px;
   font-weight: 300;
   display: inline-block;
 }
@@ -218,8 +239,43 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
+  flex: 1;
 }
 
+/* Call Us section specific - ensure proper alignment */
+.footer-contact .contact-row .phone-row-footer {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 4px 0;
+  min-height: 32px;
+}
+
+.footer-contact .contact-row .phone-label-footer {
+  min-width: 200px;
+  flex-shrink: 0;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.footer-contact .contact-row .phone-numbers-footer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px;
+  flex: 1;
+}
+
+.footer-contact .contact-row .phone-numbers-footer a {
+  font-size: 14px;
+  white-space: nowrap;
+  text-transform: none !important;
+}
+
+/* Bottom Bar */
 .footer-bottom {
   margin-top: 60px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -234,6 +290,7 @@
 
 .footer-bottom p {
   margin: 0;
+  text-transform: capitalize;
 }
 
 .footer-links {
@@ -243,15 +300,35 @@
 
 .footer-links a {
   color: rgba(255, 255, 255, 0.75);
+  text-transform: capitalize;
 }
 
 .footer-links a:hover {
   color: var(--secondary);
 }
 
+/* --- Responsive --- */
 @media (max-width: 1200px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .phone-label-footer {
+    min-width: 185px;
+  }
+
+  .footer-contact .contact-row .phone-label-footer {
+    min-width: 185px;
+  }
+}
+
+@media (max-width: 992px) {
+  .phone-label-footer {
+    min-width: 175px;
+  }
+
+  .footer-contact .contact-row .phone-label-footer {
+    min-width: 175px;
   }
 }
 
@@ -276,12 +353,41 @@
   }
 
   .phone-label-footer {
-    min-width: 130px;
+    min-width: 165px;
     font-size: 13px;
   }
 
   .phone-numbers-footer a {
     font-size: 13px;
+  }
+
+  .footer-contact .contact-row .phone-label-footer {
+    min-width: 165px;
+    font-size: 13px;
+  }
+
+  .footer-contact .contact-row .phone-numbers-footer a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .phone-label-footer {
+    min-width: 150px;
+    font-size: 12px;
+  }
+
+  .phone-numbers-footer a {
+    font-size: 12px;
+  }
+
+  .footer-contact .contact-row .phone-label-footer {
+    min-width: 150px;
+    font-size: 12px;
+  }
+
+  .footer-contact .contact-row .phone-numbers-footer a {
+    font-size: 12px;
   }
 }
 
@@ -291,7 +397,8 @@
     align-items: flex-start;
     gap: 2px;
     min-height: auto;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
+    padding: 2px 0;
   }
 
   .phone-label-footer {
@@ -304,6 +411,15 @@
   }
 
   .phone-numbers-footer a {
+    font-size: 13px;
+  }
+
+  .footer-contact .contact-row .phone-label-footer {
+    min-width: auto;
+    font-size: 13px;
+  }
+
+  .footer-contact .contact-row .phone-numbers-footer a {
     font-size: 13px;
   }
 }

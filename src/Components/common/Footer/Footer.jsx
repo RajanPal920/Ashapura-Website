@@ -23,26 +23,18 @@ function Footer() {
           <img src={logo} alt="Shree Ashapura Metal & Alloys" />
 
           <p>
-            Shree Ashapura Metal & Alloys Pvt. Ltd. is a leading manufacturer,
-            supplier and exporter of premium stainless steel, alloy steel,
-            duplex steel, nickel alloy and industrial piping products worldwide.
+            Shree Ashapura Metal & Alloys Pvt. Ltd. is a Leading Manufacturer,
+            Supplier And Exporter Of Premium Stainless Steel, Alloy Steel,
+            Duplex Steel, Nickel Alloy and Industrial Piping Products Worldwide.
           </p>
-
-          <div className="footer-badges">
-            <span>ISO 9001:2015</span>
-            <span>ISO 14001:2015</span>
-            <span>CE Certified</span>
-          </div>
 
           <div className="socials">
             <a href="#">
               <FaFacebookF />
             </a>
-
             <a href="#">
               <FaLinkedinIn />
             </a>
-
             <a href="#">
               <FaInstagram />
             </a>
@@ -52,7 +44,6 @@ function Footer() {
         {/* Quick Links */}
         <div>
           <h4>Quick Links</h4>
-
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -81,7 +72,6 @@ function Footer() {
         {/* Products */}
         <div>
           <h4>Our Products</h4>
-
           <ul>
             <li>
               <Link to="/products/coils">Coils</Link>
@@ -108,53 +98,43 @@ function Footer() {
         <div className="footer-contact">
           <h4>Contact Us</h4>
 
-          {/* Address - Now First */}
+          {/* Registered & Head Office */}
           <div className="contact-row">
             <FaMapMarkerAlt className="contact-icon" />
             <div>
               <p>
-                <strong>Regd. Office:</strong> Building No. 58, 1st Floor, Shop
-                No. 1, 1st Kumbharwada, Mumbai - 400004, Maharashtra, India.
-              </p>
-              <p style={{ marginTop: "8px" }}>
-                <strong>Branch Office:</strong> Shree Ashapura Metal and Alloys
-                Pvt Ltd, Building no. 60/62, Shop no. 1, Khandke Building, 1st
-                Kumbharwada Lane, Mumbai 400004
-                <p>
-                  <strong>Phone:</strong>{" "}
-                  <a href="tel:+919223289991">+91 92232 89991</a>
-                </p>
-              </p>
-              <p style={{ marginTop: "8px" }}>
-                <strong>Factory:</strong> Shree Ashapura Metal and Alloys Pvt
-                Ltd, Gala no. X/5, Kasturi Industrial Estate, Fatak Road,
-                Bhayandar East, 101105
-              </p>
-              <p>
-                <strong>Phone:</strong>{" "}
-                <a href="tel:+919869189991">+91 98691 89991</a>
+                <strong>Registered &amp; Head Office</strong>
+                <br />
+                Building No. 58, 1st Floor, Shop No. 1, 1st Kumbharwada, Mumbai
+                - 400004, Maharashtra, India.
               </p>
             </div>
           </div>
 
-          {/* Phone Numbers - Now Second */}
+          {/* Call Us */}
           <div className="contact-row">
             <FaPhoneAlt className="contact-icon" />
             <div>
+              <p>
+                <strong>Call Us</strong>
+              </p>
+
               <div className="phone-row-footer">
                 <span className="phone-label-footer">Landline:</span>
                 <span className="phone-numbers-footer">
                   <a href="tel:+912267438386">+91 22 6743 8386</a>
-                  <span className="separator-footer"> / </span>
+                  <span className="separator-footer">/</span>
                   <a href="tel:+912266362062">+91 22 6636 2062</a>
                 </span>
               </div>
+
               <div className="phone-row-footer">
                 <span className="phone-label-footer">Mr. B. H. Jain:</span>
                 <span className="phone-numbers-footer">
                   <a href="tel:+917666989991">+91 76669 89991</a>
                 </span>
               </div>
+
               <div className="phone-row-footer">
                 <span className="phone-label-footer">
                   Mr. ShyamSingh Rajput:
@@ -166,57 +146,107 @@ function Footer() {
             </div>
           </div>
 
-          {/* Email - Now Third */}
+          {/* Email Us */}
           <div className="contact-row">
             <FaEnvelope className="contact-icon" />
             <div>
-              <a href="mailto:sales@shreeashapurametal.com">
-                sales@shreeashapurametal.com
-              </a>
-              <a href="mailto:shreeashapura1@gmail.com">
-                shreeashapura1@gmail.com
-              </a>
+              <p>
+                <strong>Email Us</strong>
+              </p>
+              <p>
+                <a href="mailto:sales@shreeashapurametal.com">
+                  sales@shreeashapurametal.com
+                </a>
+                <br />
+                <a href="mailto:shreeashapurametal@gmail.com">
+                  shreeashapurametal@gmail.com
+                </a>
+              </p>
             </div>
           </div>
 
-          {/* Website Links - Now Fourth */}
+          {/* Website */}
           <div className="contact-row">
             <FaGlobe className="contact-icon" />
             <div>
-              <a
-                href="https://www.shreeashapurametal.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                www.shreeashapurametal.com
-              </a>
-              <a
-                href="https://www.metalsupplier.in"
-                target="_blank"
-                rel="noreferrer"
-              >
-                www.metalsupplier.in
-              </a>
+              <p>
+                <strong>Website</strong>
+              </p>
+              <p>
+                <a
+                  href="https://www.shreeashapurametal.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  www.shreeashapurametal.com
+                </a>
+                <br />
+                <a
+                  href="https://www.metalsupplier.in"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  www.metalsupplier.in
+                </a>
+              </p>
+            </div>
+          </div>
+
+          {/* Branch Office */}
+          <div className="contact-row">
+            <FaMapMarkerAlt className="contact-icon" />
+            <div>
+              <p>
+                <strong>Branch Office</strong>
+                <br />
+                Shree Ashapura Metal & Alloys Pvt Ltd,
+                <br />
+                Building No. 60/62,
+                <br />
+                Shop No. 1, Khandke Building, 1st Kumbharwada Lane,
+                <br />
+                Mumbai 400004
+              </p>
+              <p>
+                <strong>Phone:</strong>{" "}
+                <a href="tel:+919223289991">+91 92232 89991</a>
+              </p>
+            </div>
+          </div>
+
+          {/* Factory Address */}
+          <div className="contact-row">
+            <FaMapMarkerAlt className="contact-icon" />
+            <div>
+              <p>
+                <strong>Factory Address</strong>
+                <br />
+                Shree Ashapura Metal & Alloys Pvt Ltd,
+                <br />
+                Gala No. X/5, Kasturi Industrial Estate,
+                <br />
+                Fatak Road, Bhayandar East, 401105
+              </p>
+              <p>
+                <strong>Phone:</strong>{" "}
+                <a href="tel:+919869189991">+91 98691 89991</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       {/* Bottom Bar */}
-
       <div className="footer-bottom">
         <div className="container footer-bottom-content">
           <p>
-            © 2026 Shree Ashapura Metal & Alloys Pvt. Ltd. All Rights
-            Reserved.|Design and SEO by Sunmarg India.
+            © 2026 Shree Ashapura Metal &amp; Alloys Pvt. Ltd. All Rights
+            Reserved. | Design and SEO by Sunmarg India.
           </p>
-
           <div className="footer-links">
             <a href="#">Privacy Policy</a>
-
             <span>|</span>
-
-            <a href="#">Terms & Conditions</a>
+            <a href="#">Terms &amp; Conditions</a>
           </div>
         </div>
       </div>

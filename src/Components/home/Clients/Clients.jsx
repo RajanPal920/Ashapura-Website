@@ -26,7 +26,7 @@ function Clients() {
 
           <h2>Our Valued Clients</h2>
 
-          <p>
+          <p className="text-capitalize">
             Supplying premium stainless steel products to
             leading companies across Oil & Gas, Power,
             Marine, Chemical and Infrastructure industries.
