@@ -26,9 +26,9 @@ function CTA() {
             Request A Quote
           </Link>
 
-          <Link to="/products" className="cta-outline">
+          {/* <Link to="/products/pipes" className="cta-outline">
             View Products
-          </Link>
+          </Link> */}
         </div>
 
       </div>
