@@ -117,13 +117,14 @@ function Footer() {
                 No. 1, 1st Kumbharwada, Mumbai - 400004, Maharashtra, India.
               </p>
               <p style={{ marginTop: "8px" }}>
-                <strong>Head Office:</strong> 14-A, Parasnath Street, Rakhial,
-                Ahmedabad - 380023, Gujarat, India.
+                <strong>Branch Office:</strong> Shree Ashapura Metal and Alloys
+                Pvt Ltd, Building no. 60/62, Shop no. 1, Khandke Building, 1st
+                Kumbharwada Lane, Mumbai 400004
               </p>
               <p style={{ marginTop: "8px" }}>
-                <strong>Factory:</strong> P. No. 1958, Bailbudapada, Opp.
-                Barmashell Petrol Pump, Satiwali, Vasai (E), District Palghar,
-                Maharashtra, India.
+                <strong>Factory:</strong> Shree Ashapura Metal and Alloys Pvt
+                Ltd, Gala no. X/5, Kasturi Industrial Estate, Fatak Road,
+                Bhayandar East, 101105
               </p>
             </div>
           </div>
