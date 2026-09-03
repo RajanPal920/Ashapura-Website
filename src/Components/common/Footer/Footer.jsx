@@ -120,11 +120,19 @@ function Footer() {
                 <strong>Branch Office:</strong> Shree Ashapura Metal and Alloys
                 Pvt Ltd, Building no. 60/62, Shop no. 1, Khandke Building, 1st
                 Kumbharwada Lane, Mumbai 400004
+                <p>
+                  <strong>Phone:</strong>{" "}
+                  <a href="tel:+919223289991">+91 92232 89991</a>
+                </p>
               </p>
               <p style={{ marginTop: "8px" }}>
                 <strong>Factory:</strong> Shree Ashapura Metal and Alloys Pvt
                 Ltd, Gala no. X/5, Kasturi Industrial Estate, Fatak Road,
                 Bhayandar East, 101105
+              </p>
+              <p>
+                <strong>Phone:</strong>{" "}
+                <a href="tel:+919869189991">+91 98691 89991</a>
               </p>
             </div>
           </div>
