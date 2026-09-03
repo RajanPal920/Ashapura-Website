@@ -192,7 +192,7 @@ function ContactSection() {
                 <br />
                 Shop No. 1, Khandke Building, 1st Kumbharwada Lane,
                 <br />
-                Mumbai 400004
+                Mumbai - 400004
               </p>
               <p>
                 <strong>Phone:</strong>{" "}
@@ -212,7 +212,7 @@ function ContactSection() {
                 Shree Ashapura Metal & Alloys Pvt Ltd, Gala No. X/5, Kasturi
                 Industrial Estate,
                 <br />
-                Fatak Road, Bhayandar East, 401105
+                Fatak Road, Bhayandar East - 401105
               </p>
               <p>
                 <strong>Phone:</strong>{" "}
