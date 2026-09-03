@@ -17,7 +17,7 @@ function AboutPreview() {
               ))}
             </div>
             <div className="badge-center">
-              <h3>15+</h3>
+              <h3>25+</h3>
               <span>Years<br/>Experience</span>
             </div>
           </div>

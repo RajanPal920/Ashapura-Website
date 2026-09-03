@@ -71,6 +71,7 @@
   color: #0F172A;
   margin: 0 0 22px;
   line-height: 1.2;
+    text-transform: capitalize;
 }
 
 .overview-body {
@@ -78,6 +79,7 @@
   line-height: 1.8;
   font-size: 0.96rem;
   margin-bottom: 14px;
+  text-transform: capitalize;
 }
 
 /* Stats */
