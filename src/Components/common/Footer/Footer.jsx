@@ -117,16 +117,17 @@ function Footer() {
               </p>
 
               <div className="phone-row-footer">
-                <span className="phone-label-footer">Landline:</span>
+                <span className="phone-label-footer">Landline</span>
                 <span className="phone-numbers-footer">
                   <a href="tel:+912267438386">+91 22 6743 8386</a>
-                  <span className="separator-footer">/</span>
+                </span>
+                <span className="phone-numbers-footer">
                   <a href="tel:+912266362062">+91 22 6636 2062</a>
                 </span>
               </div>
 
               <div className="phone-row-footer">
-                <span className="phone-label-footer">Mr. B. H. Jain:</span>
+                <span className="phone-label-footer">Mr. B. H. Jain</span>
                 <span className="phone-numbers-footer">
                   <a href="tel:+917666989991">+91 76669 89991</a>
                 </span>
@@ -134,7 +135,7 @@ function Footer() {
 
               <div className="phone-row-footer">
                 <span className="phone-label-footer">
-                  Mr. ShyamSingh Rajput:
+                  Mr. ShyamSingh Rajput
                 </span>
                 <span className="phone-numbers-footer">
                   <a href="tel:+919326883622">+91 93268 83622</a>
@@ -156,7 +157,7 @@ function Footer() {
                 </a>
                 <br />
                 <a href="mailto:shreeashapura1@gmail.com">
-                 shreeashapura1@gmail.com
+                  shreeashapura1@gmail.com
                 </a>
               </p>
             </div>

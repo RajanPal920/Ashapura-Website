@@ -17,7 +17,7 @@ import { Helmet } from "react-helmet-async";
 import { FaBuilding, FaGlobe, FaHandshake } from "react-icons/fa";
 
 export const stats = [
-  { value: 13, suffix: "+", label: "Years Exp." },
+  { value: 25, suffix: "+", label: "Years Exp." },
   { value: 500, suffix: "+", label: "Projects" },
   { value: 100, suffix: "%", label: "Quality" },
 ];

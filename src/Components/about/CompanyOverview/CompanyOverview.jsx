@@ -16,14 +16,14 @@ export default function CompanyOverview({ stats, CountUp }) {
           <p className="overview-eyebrow">Our History</p>
           <h2 className="overview-heading">Our Journey Began in 2013</h2>
           <p className="overview-body">
-            Ashapura Metal & Alloys was established with a singular vision: to bridge
+           Shree Ashapura Metal & Alloys Pvt Ltd was established with a singular vision: to bridge
             the gap between high-quality steel manufacturing and the critical needs of
             India's growing infrastructure. What started as a focused operation has now
             evolved into a premier supply hub for exotic and standard alloys.
           </p>
           <p className="overview-body">
             We understood early on that in industries like Oil & Gas, Construction, and
-            Heavy Engineering, there is no room for error. Reliability isn't a luxury —
+            Heavy Engineering, there is no room for error. Reliability isn't a luxury 
             it's a necessity. Over the last decade and a half, we have dedicated
             ourselves to sourcing, manufacturing, and supplying only the finest Pipes,
             Plates, Fittings, and Alloys.
