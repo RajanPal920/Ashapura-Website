@@ -79,10 +79,10 @@ function Navbar() {
               <FaPhone /> +91 7666989991
             </span>
             <span>
-              <FaEnvelope /> shreeashapura1@gmail.com
+              <FaEnvelope /> sales@shreeashapurametal.com
             </span>
             <span>
-              <FaEnvelope /> sales@shreeashapurametal.com
+              <FaEnvelope /> shreeashapura1@gmail.com
             </span>
           </div>
           <div className="strip-right">
@@ -592,6 +592,7 @@ function Navbar() {
             <NavLink to="/gallery" onClick={() => setMenuOpen(false)}>
               Gallery
             </NavLink>
+
             <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
               Contact
             </NavLink>

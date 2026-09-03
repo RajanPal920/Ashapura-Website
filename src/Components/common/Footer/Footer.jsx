@@ -58,9 +58,6 @@ function Footer() {
               <Link to="/materials">Materials</Link>
             </li>
             <li>
-              <Link to="/certifications">Certifications</Link>
-            </li>
-            <li>
               <Link to="/gallery">Gallery</Link>
             </li>
             <li>
@@ -158,8 +155,8 @@ function Footer() {
                   sales@shreeashapurametal.com
                 </a>
                 <br />
-                <a href="mailto:shreeashapurametal@gmail.com">
-                  shreeashapurametal@gmail.com
+                <a href="mailto:shreeashapura1@gmail.com">
+                 shreeashapura1@gmail.com
                 </a>
               </p>
             </div>
@@ -205,7 +202,7 @@ function Footer() {
                 <br />
                 Shop No. 1, Khandke Building, 1st Kumbharwada Lane,
                 <br />
-                Mumbai 400004
+                Mumbai - 400004
               </p>
               <p>
                 <strong>Phone:</strong>{" "}
@@ -225,7 +222,7 @@ function Footer() {
                 <br />
                 Gala No. X/5, Kasturi Industrial Estate,
                 <br />
-                Fatak Road, Bhayandar East, 401105
+                Fatak Road, Bhayandar East - 401105
               </p>
               <p>
                 <strong>Phone:</strong>{" "}
